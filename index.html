@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lite Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body> 
+<form action="send.php">
+    <script src="pricelist.js"></script>
+	<header>
+		<h2><a href="#">Lite Hotel</a></h2>
+		<nav>
+<li><a href="/index.html">Главная</a></li>
+			<li><a href="https://litehote1.000webhostapp.com/komn">Наши номера</a></li>
+			<li><a href="#">Ресторан</a></li>
+			<li><a href="/bron">Бронирование</a></li>
+			<li><a href="#">Отзывы</a></li>
+		</nav>
+	</header>
+	<section class="herod">
+		<div class="background-image" style="background-image: url(hero.jpg);"></div>
+		<h1>Бронирование номеров</h1>
+        <div class="container">
+      <div>Фамилия<input type="text" name="fam" placeholder="Иванов" required minlength="3 size="42"></div>
+        <div>Имя<input type="text" name="nam" placeholder="Иван" required minlength="3 size="42"></div>
+            <div>Отчество<input type="text" name="otch" placeholder=" Иванович" required minlength="3 size="42"></div>
+                <div>Дата заезда<input type="date" name="checkin" min="2019-04-11" max="2019-12-31"></div>
+                <div>Дата выезда<input type="date" name="departure" min="2019-04-11" max="2019-12-31"></div>
+                <div>Ваш email      <input type="email" name="email" placeholder="litehotel@litehotel.ru" required minlength="6 size="35"></div></div>
+                <div>Ваш телефон<br><input type="pnumber" name="pnumber" required minlength="6 placeholder="+79991112233 size="39"></div>
+            
+                        Уровень комфортабельности<select type="text" name="lvl" id="lvl">
+                        <option value="window">Кровать и окно</option>
+                        <option value="television">Телевизор</option>
+                        <option value="conditioning">Кондиционер</option>
+                        <option value="jacuzzi minibar">Мини-бар и джакузи</option>
+                        </select>
+                        Дополнительные опции<select type="text" name="dop" id="dop">
+                        <option value="wifi">Wi-Fi</option>
+                        <option value="food">Питание</option>
+                        <option value="all">Все вместе</option>
+                        <option value="null">Ничего</option>
+                         </select> 
+                         Тип размещения<select type="text" name="room" id="room">
+                        <option value="stand">Стандартный номер</option>
+                        <option value="one">Одноместный номер</option>
+                        <option value="two">Двухместный номер</option>
+                        <option value="stud">Студийный номер</option>
+                         </select><br>
+                         <input type="button" onclick="raschitat();" value="Рассчитать стоимость">
+
+<div id="stoimost"></div>
+<input type="submit" name="my_button" value="Бронировать">
+
+                    
+    
+
+	</section>
+    
+	<section class="our-work">
+		<h3 class="title">Немного о нашем отеле</h3>
+		<p>Уважаемый Гость, добро пожаловать на сайт Lite Hotel. Здесь все создано как для отдыха, так и для бизнес-встреч: комфортные номера, семейный ресторан, конференц-залы и комната для переговоров. И сама территория отеля заслуживает отдельного внимания: рукотворное озеро с пляжем, прогулки и разнообразные фестивали под открытым небом. Мы надеемся, что у Вас останутся самые лучшие впечатления от отдыха в «Lite Hotel».</p>
+		<hr>
+
+		<ul class="grid">
+			<li class="small" style="background-image: url(coast.jpg);"></li>
+			<li class="large" style="background-image: url(island.jpg);"></li>
+			<li class="large" style="background-image: url(balloon.jpg);"></li>
+			<li class="small" style="background-image: url(mountain.jpg);"></li>
+	
+	</section>
+
+</form>
+</body>
+
+</html>

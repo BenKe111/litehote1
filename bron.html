@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lite Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <form action="bron.php">
+</head>
+
+<body>
+	<header>
+		<h2><a href="#">Lite Hotel</a></h2>
+		<nav>
+<li><a href="/index.html">Главная</a></li>
+			<li><a href="/komn">Наши номера</a></li>
+			<li><a href="#">Ресторан</a></li>
+			<li><a href="/bron.html">Бронирование</a></li>
+			<li><a href="#">Отзывы</a></li>
+		</nav>
+	</header>
+	<section class="herod">
+		<div class="background-image" style="background-image: url(hero.jpg);"></div>
+		<h1>Бронирование номеров</h1>
+        Если не оплатить бронирование в течении 24 часов, то бронирование автоматически отменяется.
+        Для подтверждения оплаты введите в форму ниже свои Имя Фамилию Отчество, которые вводили при бронировании и произведите оплату. 
+        <br>
+        <div>Фамилия<input type="text" name="fam" placeholder="Иванов" required minlength="3 size="42"></div>
+        <div>Имя     <input type="text" name="nam" placeholder="Иван" required minlength="3 size="40"></div>
+            <div>Отчество<input type="text" name="otch" placeholder=" Иванович" required minlength="3 size="42"></div><br>
+            Способ оплаты<select type="text" name="payment" id="payment">
+                        <option value="sber">Сбербанк Онлайн</option>
+                        <option value="scrill">Скрилл</option>
+                        <option value="qiwi">Киви</option>
+                        <option value="visa mastercard">Виза/Мастеркард</option>
+                         </select><br>
+<input type="submit" name="my_button" value="Бронировать">
+                    
+    
+</form>
+	</section>
