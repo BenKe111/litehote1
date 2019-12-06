@@ -12,6 +12,7 @@ $query ="SELECT * FROM clients";
 
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link)); 
 if($result) 
+{ 
 $rows = mysqli_num_rows($result);
 
 echo "<table><tr><th>Id</th><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Почта</th><th>Телефон</th><th>Бронь</th></tr>"; 
